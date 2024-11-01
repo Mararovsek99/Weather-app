@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <input type="text" name="Search" id="search">
+    <button class="SearchBtn" role="button" id="searchBtn">Search</button>
+
+    <div class="switch" id="UnitBtn">
+        <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
+        <label id="metric" for="toggle-on" class="btn">Metric</label>
+        <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+        <label id="us" for="toggle-off" class="btn">US</label>
+    </div>
+        
+    
+
+    <div class="infoContainer">
+        <div id="description">Mostly Sunny</div>
+        <div class="title" id="title">Slovenia</div>
+        <div class="temp">
+            <h1 id="temp">45</h1>
+            <h2 id="Tunit">°C</h2>
+        </div>
+        <div class="otherData">
+            <h3 class="addData" id="feel">Feel : 22°C</h3>
+            <h3 class="addData" id="wind">Wind : 22 km/h</h3>
+            <h3 class="addData" id="humi">Humidity : 22%</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
